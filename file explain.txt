@@ -1,0 +1,36 @@
+file explaination 
+example : package rplidar
+##############################################################
+.launch文件：
+<launch>
+    <node **** >
+    <param ****>
+    </node>
+</launch>
+1：定义节点名字（打开某个节点？）
+2：定义参数的名字、类型和值。
+(串口名称、波特率、frame id、inverted、角度补偿）
+#view_rplidar.launch -->rplidar.launch+ node:rviz.
+
+#############################################################
+.rviz文件：
+1.设定rviz的各种参数：
+	a：panels（控制台）
+	b：Visualization Manager（可视化管理）
+	c：Window Geometry（窗口几何尺寸）
+#############################################################
+.sh文件：linux下操作系统的脚本文件（相当于在命令行输入.sh文件里面的内容）
+文件中可能会有：echo,sudo *****,sudo cp *****,sudo rm ****** 等命令 
+#sudo service udev * 
+#udev 是linux的一个设备管理器，用于管理/dev目录下的设备节点
+
+#############################################################
+.rules 规则文件：http://blog.csdn.net/smfwuxiao/article/details/7640614
+#rplidar.rules中设置了udev的规则
+
+#############################################################
+.rst 版本日志：记录各个版本更新的时间和内容
+
+#############################################################
+package.xml 文件:标明package的相关信息和依赖情况
+
